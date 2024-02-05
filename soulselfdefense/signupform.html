@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Classes Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="http://wwww.soulselfdefense.com">Soul Self Defense</a>
+            <a href="dragonfiremain.html">Dragon Fire Martial Arts</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="history.html">History of Tang Soo Do</a>
+            <a href="schedule.html">Class Schedule</a>
+            <a href="signupform.html"><button>Sign Up</button></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <form class="form-style" id="form" action="mailto:soulselfdefense@gmail.com" method="POST" enctype="text/plain"
+        name="ContactUs">
+        <h1 class="center space">Sign Up Here!</h1>
+        <h2 class="center">Member Info</h2>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="text" id="memberName" name="memberName" placeholder="Member Name" required>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="text" id="memberDOB" name="memberDOB" placeholder="MM/DD/YYYY" required>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="text" id="memberAge" name="memberAge" placeholder="Member Age" required>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="text" id="memberGender" name="memberGender" placeholder="Member Gender"
+                    required>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input type="checkbox" id="parentGuardian" name="parentGuardian">
+                <label>I am the parent/guardian of the member above</label>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="text" id="guardianName" name="guardianName"
+                    placeholder="Parent/Guardian Name">
+            </div>
+        </div>
+        <br>
+        <br>
+        <h2 class="center">Address</h2>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="text" id="streetAddress" name="streetAddress" placeholder="Street Address"
+                    required>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="text" id="city" name="city" placeholder="City" required>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="text" id="state" name="state" placeholder="State" required>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h2 class="center">Contact Information</h2>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="text" id="homePhone" name="homePhone"
+                    placeholder="Home Phone - xxx-xxx-xxxx" required>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="text" id="cellPhone" name="cellPhone"
+                    placeholder="Cell Phone - xxx-xxx-xxxx" required>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input type="checkbox" id="parentGuardian" name="parentGuardian">
+                <label>I would like to receive text updates and notifications.</label>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <label>Please select your preferred method of contact.</label>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input type="checkbox" id="phonePreferred" name="phonePreferred">
+                <label>Phone</label>
+                <input type="checkbox" id="emailPreferred" name="emailPreferred">
+                <label>Email</label>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h2 class="center">Emergency Contact Information</h2>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="text" id="emergencyName" name="emergencyName"
+                    placeholder="Emergency Contact Name" required>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input class="textbox" type="text" id="emergencyPhone" name="emergencyPhone"
+                    placeholder="Emergency Contact Phone Number" required>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h2 class="center">Member Contract</h2>
+        <div class="row center">
+            <div class="col-12">
+                <label for="holdHarmless">AGREEMENT AND LIABILITY WAIVER</label>
+                <p>I, the undersigned, both personally and as a parent or legal guardian of a minor child, understand
+                    and agree that there is some unavoidable risk of personal injury and harm, which is indigenous to
+                    physical contact sports, including those involving the martial arts. I agree that I hold
+                    responsibility for any unlikely injury to the student (anyone who participates in Training with
+                    DragonFire Martial Arts, which could be a child or adult) and that owners, operators, officers,
+                    employees, instructors, students, or agents of DragonFire Martial Arts cannot be held responsible
+                    for these injuries or death. I hereby agree to the following:
+                    I am fully aware that the Martial Arts used is unarmed combat, and that contact may be used during a
+                    training session, which could result in accidental injury, or in incredibly unlikely circumstances,
+                    death. This includes accidental contact made by any instructor or another student and injuries could
+                    include bruises, abrasions, broken bones and cartilage, concussion, organ damage, or in extreme
+                    unlikely circumstances, death. These injuries may be inflicted accidentally, but also may be
+                    inflicted through negligence or malfunctioning equipment.
+                    I am voluntarily enrolling in Martial Arts with the knowledge of potential danger involved, and I
+                    agree to accept any and all risk of injury.
+                    I understand that there is occasional use of safe versions of weapons, for example bo staff, short
+                    sticks, plastic knives and plastic guns, and I consent to the student’s use of these.
+                    I understand that the student will be participating in strenuous physical exercise that could lead
+                    to minor or serious injury.
+                    I understand that the risk of injury cannot be reduced without severely limiting the instruction and
+                    class technique offered.
+                    I understand that no one at DragonFire Martial Arts has given the student the authority to sue any
+                    of the techniques taught to the student on any person other than in training, matches,
+                    demonstrations, where the student and the instructor have agreed that they are sufficiently trained
+                    and qualified to do so. I understand that the student does not have the authority to demonstrate
+                    their martial arts outside the lesson, or in the absence of an instructor.
+                    After having fully read the risks of injury and death, I hereby waive my right to a lawsuit in the
+                    extreme unlikely event of injury or death during a lesson with DragonFire Martial Arts, or outside
+                    of the lesson while using the Martial Arts taught.
+                    It is further expressly agreed that all instructions, services and equipment shall be undertaken by
+                    student and by student’s sole risk. Instructor and/or School (facility of instruction) shall not be
+                    liable for any damages arising from personal injuries sustained by Student in, on, or about the
+                    premises of said school (facility of instruction), and he/she does hereby fully and forever release
+                    and discharge school, its owners, employees and agents, from any and all claims demands, damages,
+                    rights of action of causes of action, present or future, whether the same be known or unknown,
+                    anticipated or unanticipated, resulting from or arising out of students participation in the course
+                    of instructions herein.
+                </p>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I have read and agree to the above statement.</label>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-12">
+                <input class="submit-button" type="submit" id="submit" name="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        <div class="container-fluid grey-background">
+            <div class="row">
+                <div class="col-xl-9">
+                    <p style="color: rgb(90, 90, 90);">COPYRIGHT © 2022 SOULSELFDEFENSE LLC - ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="col-xl-3">
+                    <a href="http://www.kalynmitchell.com/">
+                        <p style="float: right; color: rgb(90, 90, 90);">Powerd by - Kalyn Mitchell</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
+</body>
+
+</html>
